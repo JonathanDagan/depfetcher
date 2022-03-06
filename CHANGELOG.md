@@ -17,8 +17,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Refine the triggers for the `build` GitHub workflow. ([#130](https://github.com/golang-templates/seed/pull/130))
-  - Automatic trigger for the `main` branch.
-  - Automatic trigger for pull requests targeting the `main` branch.
+  - Automatic trigger for the `master` branch.
+  - Automatic trigger for pull requests targeting the `master` branch.
   - Manual trigger via [`workflow_dispatch`](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#workflow_dispatch) ([blog post](https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/)).
 - Lock the runners' version the in `build` and `release` GitHub workflows. ([#130](https://github.com/golang-templates/seed/pull/130))
 - Configure `golint` linter with `min-confidence: 0.8` to avoid [false positive "should have a package comment"](https://github.com/golangci/golangci-lint/issues/1556). ([#132](https://github.com/golang-templates/seed/pull/132))
